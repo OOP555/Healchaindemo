@@ -1,0 +1,91 @@
+@startuml HealChain_System
+
+' Classes
+class DoctorDashboard {
+  - JList<String> patientList
+  - DefaultListModel<String> listModel
+  - JTable infoTable
+  - DefaultTableModel tableModel
+  - JTextField newDiagnosisField
+  - JTextField newMedField
+  - JTextField newTestField
+  - int doctorId
+  - int selectedPatientId
+  - static DoctorDashboard instance
+  + DoctorDashboard(int doctorId)
+  + static refreshPatientsTable()
+  - initComponents()
+  - loadPatientsFromDB()
+  - loadPatientDetails(int patientId)
+  - createAddPanel(String, JTextField, ActionListener): JPanel
+  - addDiagnosis(ActionEvent)
+  - addMedication(ActionEvent)
+  - addTestResult(ActionEvent)
+  - addMedicalRecord(String, String, String)
+  - getOrCreateEncounter(Connection): int
+}
+
+class LoginFrame {
+  - JTextField usernameField
+  - JPasswordField passwordField
+  - JComboBox<UserType> userTypeComboBox
+  + LoginFrame()
+  - initComponents()
+  - handleLogin(ActionEvent)
+}
+
+class LoginPage {
+  + main(String[])
+}
+
+class DbHandler {
+  - static final String DB_URL
+  - static final String DB_USER
+  - static final String DB_PASSWORD
+  + getConnection(): Connection
+  + validateAdmin(String, String): boolean
+}
+
+class RegistrationPanel {
+  - JTextField fullNameField
+  - JTextField dobField
+  - JTextField genderField
+  - JTextField contactField
+  - JTextField addressField
+  - JPasswordField passwordField
+  + RegistrationPanel()
+  - initComponents()
+  - registerPatient(ActionEvent)
+}
+
+enum UserType {
+  DOCTOR
+  REGISTRATION
+}
+
+' Relationships
+DoctorDashboard --> DbHandler
+LoginFrame --> DbHandler
+LoginFrame --> UserType
+LoginFrame --> DoctorDashboard
+LoginFrame --> RegistrationPanel
+RegistrationPanel --> DbHandler
+RegistrationPanel ..> DoctorDashboard : «uses»
+
+' Notes
+note top of DoctorDashboard
+  Doctor's main interface for viewing
+  patient records and adding medical data
+end note
+
+note top of LoginFrame
+  Handles user authentication and
+  routes to appropriate dashboard
+end note
+
+note top of RegistrationPanel
+  Allows registration staff to
+  create new patient accounts
+end note
+
+@enduml
