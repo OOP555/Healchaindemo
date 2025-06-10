@@ -23,7 +23,7 @@ HealChain is a portable medical record system designed to give patients and doct
 ## Technologies
 
 - Java (Swing)
-- XXAMP
+- XXAMPP
 - JDBC
 - Git
 ## guide 
