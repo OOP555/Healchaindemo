@@ -10,11 +10,15 @@ HealChain is a portable medical record system designed to give patients and doct
 - Real time data storage
 
 ---
-## image 
-[](https://github.com/OOP555/Healchaindemo/blob/122056d5fbe64dfd8db917b81955cede27564c63/photo_2025-06-10_04-52-55.jpg)
-[](https://github.com/OOP555/Healchaindemo/blob/122056d5fbe64dfd8db917b81955cede27564c63/photo_2025-06-10_04-53-09.jpg)
-[](https://github.com/OOP555/Healchaindemo/blob/122056d5fbe64dfd8db917b81955cede27564c63/photo_2025-06-10_04-53-15.jpg)
-[](https://github.com/OOP555/Healchaindemo/blob/122056d5fbe64dfd8db917b81955cede27564c63/photo_2025-06-10_04-53-43.jpg)
+## demo images
+![](https://github.com/OOP555/Healchaindemo/blob/122056d5fbe64dfd8db917b81955cede27564c63/photo_2025-06-10_04-52-55.jpg)
+![](https://github.com/OOP555/Healchaindemo/blob/122056d5fbe64dfd8db917b81955cede27564c63/photo_2025-06-10_04-53-09.jpg)
+![](https://github.com/OOP555/Healchaindemo/blob/122056d5fbe64dfd8db917b81955cede27564c63/photo_2025-06-10_04-53-15.jpg)
+![](https://github.com/OOP555/Healchaindemo/blob/122056d5fbe64dfd8db917b81955cede27564c63/photo_2025-06-10_04-53-43.jpg)
+![](https://github.com/OOP555/Healchaindemo/blob/12ce550b21ce675c6092890d9ff4ca616f0a54cd/photo_2025-06-10_04-53-22.jpg)
+![](https://github.com/OOP555/Healchaindemo/blob/12ce550b21ce675c6092890d9ff4ca616f0a54cd/photo_2025-06-10_04-53-27.jpg)
+![](https://github.com/OOP555/Healchaindemo/blob/12ce550b21ce675c6092890d9ff4ca616f0a54cd/photo_2025-06-10_04-53-32.jpg)
+![](https://github.com/OOP555/Healchaindemo/blob/12ce550b21ce675c6092890d9ff4ca616f0a54cd/photo_2025-06-10_04-53-38.jpg)
 
 ## Technologies
 
@@ -22,6 +26,9 @@ HealChain is a portable medical record system designed to give patients and doct
 - XXAMP
 - JDBC
 - Git
+## guide 
+The code for the patient side is found inside the HealChain file.
+The code for the staff(hospital side) found inside src file.
 
 ---
 
